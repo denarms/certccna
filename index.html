@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CCNA Lab</title>
+<meta name="description" content="App interactiva para estudiar el CCNA 200-301: apuntes, simulacros, subnetting, tarjetas y labs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#/">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="7" width="24" height="14" rx="2"/><rect x="6" y="11" width="4" height="6"/><rect x="12" y="11" width="4" height="6"/><rect x="18" y="11" width="4" height="6"/></svg>
+      CCNA·Lab
+    </a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#/" data-r="home">Inicio</a>
+      <a href="#/estudio/1" data-r="estudio">Estudio</a>
+      <a href="#/examen" data-r="examen">Examen</a>
+      <a href="#/subnetting" data-r="subnetting">Subnetting</a>
+      <a href="#/tarjetas" data-r="tarjetas">Tarjetas</a>
+      <a href="#/labs" data-r="labs">Labs</a>
+      <a href="#/plan" data-r="plan">Plan</a>
+    </nav>
+    <div class="top-meta">
+      <span id="top-timer" class="timer" aria-live="off"></span>
+      <button class="icon-btn" id="theme-btn" type="button" aria-label="Cambiar tema claro u oscuro">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div id="app"></div>
+<div class="foot">Contenido basado en tu «Guía de estudio CCNA 200-301». El progreso se guarda solo en este navegador.</div>
+<div class="toast" id="toast" role="status"></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
